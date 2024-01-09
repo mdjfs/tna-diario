@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import CalcButton from './CalcButton'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
         <CalcButton />
         <div id="resultado"></div>
+        <Analytics />
       </div>
       </body>
     </html>
